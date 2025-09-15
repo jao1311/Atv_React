@@ -1,7 +1,6 @@
 'use client'
 import TextField from "@/components/TextField";
-import Image from "next/image";
-
+import "./styles.css"
 export default function Contato() {
 
 let nome = "";
@@ -10,7 +9,7 @@ let assunto = "";
 let mensagem = "";
 
   function botaoEnviarOnClick(){
-    alert();
+    alert(`${nome}\n${email}\n${assunto}\n${mensagem}`);
   }
   function handleNomeChange(texto: string){
     nome = texto;

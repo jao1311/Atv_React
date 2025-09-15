@@ -15,7 +15,14 @@ export default function TextField(props: Props) {
 
     const [texto, setTexto] = useState("");
 
-    function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
+    function handleInputChange(e: React.ChangeEvent<HTMLInputElement>) {
+        setTexto(e.target.value);
+        if (props.onChange){
+            props.onChange(e.target.value);
+        }
+    }
+
+    function handleTextAreaChange(e: React.ChangeEvent<HTMLTextAreaElement>) {
         setTexto(e.target.value);
         if (props.onChange){
             props.onChange(e.target.value);
@@ -28,16 +35,18 @@ export default function TextField(props: Props) {
             <span className={styles.label}>{props.label}</span>
             {
                 (props.multiline) ? (
-                <textarea />
+                <textarea onChange={handleTextAreaChange}
+                placeholder={props.label
+                }/>
             ):(
                 <input 
                 type={props.type} 
                 placeholder={props.label} 
-                onChange={handleChange}
+                onChange={handleInputChange}
                 />
             )
             }
-            {texto}
+
         </label>
         </span>
     )
