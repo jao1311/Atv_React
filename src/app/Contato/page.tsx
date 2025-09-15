@@ -1,6 +1,7 @@
 'use client'
 import TextField from "@/components/TextField";
 import "./styles.css"
+import Header from "../../components/Header/index"
 export default function Contato() {
 
 let nome = "";
@@ -26,11 +27,12 @@ let mensagem = "";
 
   return (
     <>
+    <Header/>  
     <form action="" className ="formContato">
       <TextField label="Nome" type="text" onChange={handleNomeChange}/>
       <TextField label="E-mail" type="email" onChange={handleEmailChange}/>
-      <TextField label="Assunto" type="text" onChange={handleAssuntoChange}/>
-      <TextField label="Mensagem" type="text" multiline onChange={handleMensagemChange}/>
+      <TextField label="Assunto" type="text" onChange={handleAssuntoChange} text="Mensagem do Site"/>
+      <TextField label="Mensagem" type="text" multiline onChange={handleMensagemChange} text="Monk Flip"/>
       <button onClick={botaoEnviarOnClick}>Enviar</button>
     </form>
     </>

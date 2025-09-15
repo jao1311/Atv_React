@@ -1,3 +1,12 @@
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace; 
+}
+h1{
+    color: rgb(73, 129, 35);
+    text-align: center;
+   
+}
 .formContato {
     display: flex;
     flex-direction: column;
@@ -5,10 +14,10 @@
     background: #fff;
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-  
+    box-shadow: 0 4px 30px rgba(0, 0, 0,);
+    
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
 }

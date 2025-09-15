@@ -9,11 +9,12 @@ type Props = {
     type: "text" | "email";
     multiline?: boolean;
     onChange?(texto: string): void;
+    text?:string;
 }
 
 export default function TextField(props: Props) {
 
-    const [texto, setTexto] = useState("");
+    const [texto, setTexto] = useState(props.text);
 
     function handleInputChange(e: React.ChangeEvent<HTMLInputElement>) {
         setTexto(e.target.value);
@@ -35,13 +36,16 @@ export default function TextField(props: Props) {
             <span className={styles.label}>{props.label}</span>
             {
                 (props.multiline) ? (
-                <textarea onChange={handleTextAreaChange}
-                placeholder={props.label
-                }/>
+                <textarea 
+                placeholder={props.label}
+                value={texto}
+                onChange={handleTextAreaChange}
+                />
             ):(
                 <input 
                 type={props.type} 
                 placeholder={props.label} 
+                value={texto}
                 onChange={handleInputChange}
                 />
             )
