@@ -1,0 +1,5 @@
+.Preco {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* sempre 3 colunas */
+  gap: 20px; /* espaçamento entre os cards */
+}

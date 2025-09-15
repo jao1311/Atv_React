@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    color: black;    
+}
+h1{
+    color: rgb(44, 80, 20);
+    text-align: center;
+   
+}
+h2{
+    text-align: center;
+}
+/* Estilo base para todas as imagens do site */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    image-rendering: -webkit-optimize-contrast; /* Melhora a renderização no Chrome */
+    image-rendering: crisp-edges; /* Mantém bordas definidas */
+    transition: all 0.3s ease; /* Transição suave para efeitos hover */
+}
+
+/* Melhora a qualidade de imagens redimensionadas */
+.img-optimized {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.Nome{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 600px;
+    
+}
+
+  

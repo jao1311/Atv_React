@@ -1,0 +1,59 @@
+.root {
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 10px;
+  
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    justify-content: space-between; /* distribui melhor os elementos */
+  
+    padding: 10px;
+    margin: 0;               /* retira o auto que desalinha */
+    width: 100%;             /* ocupa 100% da célula do grid */
+    height: 100%;            /* faz todos os cards terem mesma altura */
+    box-sizing: border-box;  /* evita estouro de padding */
+  }
+  
+.plastico {
+    color: dodgerblue;
+}
+
+.aco {
+    color: silver;
+}
+
+.aluminio {
+    color: lightgray;
+}
+
+.papel{
+    color: burlywood;
+}
+
+.vidro {
+    color: seagreen
+}
+.madeira {
+    color: sienna;
+}
+.tecido {
+    color: mediumvioletred;
+}
+.bateria {
+    color: orange;
+}
+.eletronico {
+    color: gold;
+}
+.oleo {
+    color: darkolivegreen;
+}
+.borracha {
+    color: black;
+}
+.isopor {
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
