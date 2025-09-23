@@ -38,12 +38,12 @@ const tipoClassMap: Record<Props["tipo"], string> = {
 
 export default function ProductCard({ nome, img, preco, tipo }: Props) {
   const className = `${styles.root} ${tipoClassMap[tipo]}`;
-
+  
   return (
     <section className={className}>
       <h3>{nome}</h3>
       <Image src={img} alt={nome} width={128} height={128} />
-      <h4>R$: {preco.toFixed(2)}</h4>
+      <h4>R$: { Number(preco).toFixed(2) }</h4>
     </section>
   );
 }
