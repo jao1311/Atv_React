@@ -1,22 +1,22 @@
-import  Produto from "@/models/Produto";
+import  Pet from "@/models/Pet";
 import ProductCard from "../ProductCard/index";
 import './styles.modules.css'
 
 type Props = {
-  produtos: Produto[];
+  pets: Pet[];
 };
 
-export default function ProductList({ produtos }: Props) {
+export default function ProductList({ pets }: Props) {
   return (
     <section className="Preco">
       
-      {produtos.map((produto) => (
+      {pets.map((Pet) => (
         <ProductCard
-          key={produto.id}
-          nome={produto.nome}
-          img={produto.img}
-          preco={produto.preco}
-          tipo={produto.tipo}
+          key={Pet.id}
+          nome={Pet.nome}
+          img={Pet.img}
+          preco={Pet.preco}
+          tipo={Pet.tipo}
         />
       ))}
     </section>

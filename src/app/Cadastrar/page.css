@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace; 
+  }
+  
+  h1 {
+    color: rgb(73, 129, 35);
+    text-align: center;
+  }
+  
+  .formCadastro {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* corrigido */
+    
+    position: absolute;
+    top: 50%; /* centralizado melhor */
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .formCadastro button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s;
+  } 
+  
+  .formCadastro button:hover {
+    background-color: #45a049;
+  }
+  

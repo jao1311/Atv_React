@@ -25,7 +25,7 @@ export default function Home() {
  
     function loadProdutos(){
       setIsLoading(true)
-      axios.get("https://produtos-server.onrender.com/api/produtos")
+      axios.get("http://localhost:4000/animals")
       .then(sucesso)
       .catch(falha)
       .finally(todoCaso)

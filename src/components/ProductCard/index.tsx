@@ -6,34 +6,24 @@ type Props = {
   img: string;
   preco: number;
   tipo:
-    | "aco"
-    | "plastico"
-    | "aluminio"
-    | "papel"
-    | "vidro"
-    | "tecido"
-    | "madeira"
-    | "bateria"
-    | "eletronico"
-    | "oleo"
-    | "borracha"
-    | "isopor";
+    | "gato"
+    | "cachorro"
+    | "passaro"
+    | "peixe"
+    | "roedor"
+    | "fazenda"
+    | "A";
 };
 
 // Mapeamento direto do tipo -> classe CSS
 const tipoClassMap: Record<Props["tipo"], string> = {
-  aco: styles.aco,
-  plastico: styles.plastico,
-  aluminio: styles.aluminio,
-  papel: styles.papel,
-  vidro: styles.vidro,
-  tecido: styles.tecido,
-  madeira: styles.madeira,
-  bateria: styles.bateria,
-  eletronico: styles.eletronico,
-  oleo: styles.oleo,
-  borracha: styles.borracha,
-  isopor: styles.isopor,
+  gato: styles.gato,
+  cachorro: styles.cachorro,
+  passaro: styles.passaro,
+  peixe: styles.peixe,
+  roedor: styles.roedor,
+  fazenda: styles.fazenda,
+  A: styles.A,
 };
 
 export default function ProductCard({ nome, img, preco, tipo }: Props) {
